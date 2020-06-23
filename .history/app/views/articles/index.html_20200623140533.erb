@@ -1,0 +1,9 @@
+<% @articles.each do |article| %>
+<h2><%= link_to article.title, article %></h2>
+<p><%= article.content %></p>
+<% end %>
+<div id="editor">some text</div>
+<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+</script>
